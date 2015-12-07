@@ -13,3 +13,4 @@ directory
 git reset HEAD filename - unstages file changes in the staging area
 git reset SHA - can be used to reset to a previous commit in your 
 commit area
+Bogus Change Here 
