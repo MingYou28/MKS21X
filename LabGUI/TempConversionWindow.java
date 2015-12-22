@@ -25,7 +25,7 @@ public class TempConversionWindow  extends JFrame implements ActionListener{
 	
 	t = new JTextField(10);
 	
-	JCheckBox c = new JCheckBox("OverClock");
+	
 	j = new JLabel("Temperature ");
 	pane.add(t);
 	pane.add(j);
@@ -37,11 +37,11 @@ public class TempConversionWindow  extends JFrame implements ActionListener{
 	String event = e.getActionCommand();
 	double degrees;
 	if(event.equals("ToF")){
-	    j.setText(""+CtoF(Double.parseDouble(j.getText())));}
+	    j.setText(""+CtoF(Double.parseDouble(t.getText())));}
     
 	
 	if(event.equals("ToC")){
-	    j.setText(""+FtoC(Double.parseDouble(j.getText())));}
+	    j.setText(""+FtoC(Double.parseDouble(t.getText())));}
   
 	
     }
